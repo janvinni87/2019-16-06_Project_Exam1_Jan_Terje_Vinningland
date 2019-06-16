@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="NASA SpaceX" content="Space activity around the world">
+  <title>NASA SpaceX</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header">
+      <a class="logo" href="index.html">
+        <img src="pictures/spacex1.png" alt="logo">
+      </a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li class="current"><a href="launchmissions.html">LAUNCH</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      </ul>
+    </header>
+
+    <div class="section">
+      <img src="pictures/87.jpg" alt="main">
+    </div>
+
+    <main class="container">
+
+      <div class="section revolutionary">
+        <div class="wrap">
+          <h3>Our launch manifest is populated by a diverse customer base, including space station resupply missions, commercial satellite launch missions, and US government science and national security missions.</h3>
+        </div>
+      </div>
+
+      <div class="section timeline">
+        <div class="wrap">
+          <h1>UPCOMING LAUNCHES</h1>
+          <div class="timeline-wrap">
+            <div id="launches" class="entries">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <section class="morelaunches">
+      <div class="wrap">
+        <a href="https://spaceflightnow.com/launch-schedule/" target="_blank" class="morelaunch">MORE LAUNCHES</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <p>&copy; 2017 SPACE EXPLORATION TECHNOLOGIES CORP</p>
+
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="pictures/facebook.png" alt="facebook" style="width:30px;height:30px;border:0;">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="pictures/instagram.png" alt="instagram" style="width:30px;height:30px;border:0;">
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img src="pictures/youtube1.png" alt="youtube" style="width:30px;height:30px;border:0;">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img src="pictures/twitter_PNG32.png" alt="twitter" style="width:30px;height:30px;border:0;">
+        </a>
+      </div>
+    </footer>
+  </div>
+
+<script src="javascript/script.js"></script>
+</body>
+
+</html>

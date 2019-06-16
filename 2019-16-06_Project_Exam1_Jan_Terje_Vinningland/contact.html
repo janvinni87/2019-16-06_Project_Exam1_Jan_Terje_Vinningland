@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="NASA SpaceX" content="Space activity around the world">
+  <title>NASA SpaceX</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.12.0/validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header">
+      <a class="logo" href="index.html">
+        <img src="pictures/spacex1.png" alt="logo">
+      </a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="launchmissions.html">LAUNCH</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li class="current"><a href="contact.html">CONTACT</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      </ul>
+    </header>
+
+    <div class="section">
+      <img src="pictures/84.jpg" alt="main">
+    </div>
+
+    <div class="section revolutionary">
+      <div class="wrap">
+        <h1>CONTACT SPACEX</h1>
+        <p><b>SPACEX HEADQUARTERS:</b> </p>
+        <p>Rocket Road. Hawthorne, California.</p>
+        <p>310-363-6000</p>
+      </div>
+    </div>
+
+    <form class="section form">
+      <div class="wrap">
+        <div class="contact-us">CONTACT US</div>
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="name">Name</label>
+          <div class="col-sm-5">
+            <input id="name" class="form-control" type="text" placeholder="Name" name="name">
+          </div>
+          <div class="col-sm-5 messages"></div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="email">Email</label>
+          <div class="col-sm-5">
+            <input id="email" class="form-control" type="email" placeholder="Email" name="email">
+          </div>
+          <div class="col-sm-5 messages"></div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="name">Mesage</label>
+          <div class="col-sm-5">
+            <input id="message" class="form-control" type="text" placeholder="Message" name="message">
+          </div>
+          <div class="col-sm-5 messages"></div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <footer>
+      <div class="footer">
+        <p>&copy; 2017 SPACE EXPLORATION TECHNOLOGIES CORP</p>
+
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="pictures/facebook.png" alt="facebook" style="width:30px;height:30px;border:0;">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="pictures/instagram.png" alt="instagram" style="width:30px;height:30px;border:0;">
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img src="pictures/youtube1.png" alt="youtube" style="width:30px;height:30px;border:0;">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img src="pictures/twitter_PNG32.png" alt="twitter" style="width:30px;height:30px;border:0;">
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="javascript/form.js"></script>
+</body>
+
+</html>

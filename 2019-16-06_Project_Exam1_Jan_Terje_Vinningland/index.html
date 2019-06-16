@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="NASA SpaceX" content="Space activity around the world">
+  <title>NASA SpaceX</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header">
+      <a class="logo" href="index.html">
+        <img src="pictures/spacex1.png" alt="logo">
+      </a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li class="current"><a href="index.html">HOME</a></li>
+        <li><a href="launchmissions.html">LAUNCH</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      </ul>
+    </header>
+
+    <div class="section">
+      <img src="pictures/44.jpg" alt="main">
+    </div>
+
+    <main class="container">
+
+      <div class="section revolutionary">
+
+        <div class="wrap">
+          <h1>REVOLUTIONARY SPACE TECHNOGLOGY</h1>
+          <p>FOR MANKIND</p>
+
+          <div class="icons row">
+            <div class="icon column">
+              <img src="pictures/rocket.png" alt="icon" />
+              <p>MOON TO MARS</p>
+            </div>
+
+            <div class="icon column">
+              <img src="pictures/astronaut.png" alt="icon" />
+              <p>HUMANS IN SPACE</p>
+            </div>
+
+            <div class="icon column">
+              <img src="pictures/satellite.png" alt="icon" />
+              <p>SPACE TECHNOLOGY</p>
+            </div>
+
+            <div class="icon column">
+              <img src="pictures/planet.png" alt="icon" />
+              <p>ROCKET SCIENCE</p>
+            </div>
+
+            <div class="icon column">
+              <img src="pictures/eye.png" alt="icon" />
+              <p>BEYOND UNKNOWN</p>
+            </div>
+
+            <a id="hide" href="#hide" class="hide">SHOW MORE</a>
+            <a id="show" href="#show" class="show">SHOW LESS</a>
+            <div class="details">
+              <h1>ROAD TO THE RED PLANET</h1>
+              <img src="pictures/planets.png" alt="mars">
+              <h3>SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologies to make this possible, with
+                the ultimate goal of enabling human life on Mars.</h3>
+              <img src="pictures/rocket2.png" alt="mars">
+              <h4>Our aspirational goal is to send our first cargo mission to Mars in 2022. The objectives for the first mission will be to confirm water resources, identify hazards, and put in place initial power, mining, and life support
+                infrastructure. A second mission, with both cargo and crew, is targeted for 2024, with primary objectives of building a propellant depot and preparing for future crew flights. The ships from these initial missions will also serve as
+                the beginnings of the first Mars base, from which we can build a thriving city and eventually a self-sustaining civilization on Mars.</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section join">
+        <div class="wrap">
+          <h1> MEN AND WOMEN IN SPACE </h1>
+          <h3>Men and women have been working together in space for decades, but a growing body of research shows that there are important gender-based differences in how people react to spaceflight's physical and psychological stressors.</h3>
+          <h3>Crew composition, including factors such as gender and nationality, will be an essential consideration as NASA moves into more-remote space destinations, which is already happening.......</h3>
+
+
+          <a href="https://www.space.com/mixed-gender-astronaut-crew-mars-exploration.html" target="_blank" class="join-button">READ MORE</a>
+
+        </div>
+      </div>
+
+      <div class="section spacestation">
+        <div class="wrap">
+          <h1>INTERNATIONAL SPACE STATION</h1>
+          <img src="pictures/iss-png--896.png" alt="iss">
+          <h3>The International Space Station (ISS) is a space station, or a habitable artificial satellite, in low Earth orbit. Its first component was launched into orbit in 1998, with the first long-term residents arriving in November 2000.It has
+            been inhabited continuously since that date.</h3>
+          <h3>The ISS serves as a microgravity and space environment research laboratory in which crew members conduct experiments in biology, human biology, physics, astronomy, meteorology, and other fields. The station is suited for the testing of
+            spacecraft systems and equipment required for missions to the Moon and Mars.[ The ISS maintains an orbit with an average altitude of 400 kilometres (250 mi) by means of reboost manoeuvres using the engines of the Zvezda module or
+            visiting spacecraft. It circles the Earth in roughly 92 minutes and completes 15.5 orbits per day.</h3>
+        </div>
+      </div>
+
+      <div class="section isslocation">
+        <div class="wrap">
+          <h1>INTERNATIONAL SPACE STATION CURRENT LOCATION</h1>
+        </div>
+        <div id="map"></div>
+        <div class="wrap">
+
+          <h3>The International Space Station is moving at close to 28,000 km/h so its location changes really fast! Where is it right now?</h3>
+        </div>
+      </div>
+
+      <div class="section subscribe-now">
+        <div class="wrap">
+          <h1>DON`T MISS OUT!</h1>
+          <h2>SIGN UP HERE, AND RECEIVE THE NEWEST OF NEWS!</h2>
+          <div id="mc_embed_signup">
+            <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+              <div id="mc_embed_signup_scroll">
+                <div class="mc-field-group"><input type="email" placeholder="Your Email" name="EMAIL" class="required email" id="mce-EMAIL"></div>
+
+
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+
+                <div style="position: absolute; left: -5000px;"><input type="text" name="" tabindex="-1" value=""></div>
+
+
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+      <div class="gallerypic">
+
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p>&copy; 2017 SPACE EXPLORATION TECHNOLOGIES CORP</p>
+
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="pictures/facebook.png" alt="facebook" style="width:30px;height:30px;border:0;">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="pictures/instagram.png" alt="instagram" style="width:30px;height:30px;border:0;">
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img src="pictures/youtube1.png" alt="youtube" style="width:30px;height:30px;border:0;">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img src="pictures/twitter_PNG32.png" alt="twitter" style="width:30px;height:30px;border:0;">
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="javascript/script.js"></script>
+</body>
+
+</html>
